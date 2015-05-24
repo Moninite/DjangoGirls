@@ -6,4 +6,5 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', views.post_list),
+    url(r'^post/new/$', views.post_new, name='post_new')
 ]

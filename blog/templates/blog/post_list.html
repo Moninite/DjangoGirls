@@ -1,11 +1,15 @@
 <html>
     <head>
         <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
     </head>
     <body>
     	{% for post in posts %}
     {{ post }}
 {% endfor %}
+<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 <div>
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
